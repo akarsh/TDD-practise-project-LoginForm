@@ -17,6 +17,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: scene)
+        
+        let loginViewController = ViewController()
+        // now we aren't loading it from Storyboard, but we could..
+        // we can decide to create ui in the storyboard or totally programmatically
+        
+        //give it a background color or it will still appear as a black screen
+        loginViewController.view.backgroundColor = .white
+        
+        window?.rootViewController = loginViewController
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
