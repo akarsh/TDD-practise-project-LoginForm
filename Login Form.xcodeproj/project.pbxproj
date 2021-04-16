@@ -104,6 +104,34 @@
 			path = DataAccess;
 			sourceTree = "<group>";
 		};
+		24390B542629E461003EF3FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		24390B552629E468003EF3FF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		24390B562629E475003EF3FF /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		24390B572629E486003EF3FF /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
 		D35731CE2628126600A5A8DE = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +173,10 @@
 		D35731F02628126700A5A8DE /* Login FormTests */ = {
 			isa = PBXGroup;
 			children = (
+				24390B542629E461003EF3FF /* UI */,
+				24390B552629E468003EF3FF /* Presentation */,
+				24390B562629E475003EF3FF /* BusinessLogic */,
+				24390B572629E486003EF3FF /* DataAccess */,
 				D35731F12628126700A5A8DE /* Login_FormTests.swift */,
 				D35731F32628126700A5A8DE /* Info.plist */,
 			);
