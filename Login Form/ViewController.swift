@@ -15,11 +15,7 @@ class ViewController: UIViewController {
     }
 
     func login(username: String, password: String) -> Bool {
-        if password == "1@34%67A!" && username == "Murthy" {
-            return true
-        } else {
-            return false
-        }
+        return false
     }
 }
 

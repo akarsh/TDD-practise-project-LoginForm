@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import Login_Form
+@testable import Login_Form
 
 class LoginControllerTests: XCTestCase {
     
