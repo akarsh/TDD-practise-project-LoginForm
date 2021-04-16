@@ -76,6 +76,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24390B502629E326003EF3FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		24390B512629E332003EF3FF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		24390B522629E34D003EF3FF /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		24390B532629E3C4003EF3FF /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
 		D35731CE2628126600A5A8DE = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +127,10 @@
 		D35731D92628126600A5A8DE /* Login Form */ = {
 			isa = PBXGroup;
 			children = (
+				24390B502629E326003EF3FF /* UI */,
+				24390B512629E332003EF3FF /* Presentation */,
+				24390B522629E34D003EF3FF /* BusinessLogic */,
+				24390B532629E3C4003EF3FF /* DataAccess */,
 				D35731DA2628126600A5A8DE /* AppDelegate.swift */,
 				D35731DC2628126600A5A8DE /* SceneDelegate.swift */,
 				D35731DE2628126600A5A8DE /* ViewController.swift */,
