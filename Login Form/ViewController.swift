@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var loginController: LoginController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +17,10 @@ class ViewController: UIViewController {
     }
 
     func login(username: String, password: String) -> Bool {
-        return false
+        
+        guard let loginController = loginController else { return false }
+        
+        return loginController.login(username: username, password: password)
     }
 }
 
