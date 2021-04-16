@@ -22,6 +22,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // now we aren't loading it from Storyboard, but we could..
         // we can decide to create ui in the storyboard or totally programmatically
         
+        //now we can inject our business logic
+        let loginController = LoginController()
+        loginViewController.loginController = loginController
+        
         //give it a background color or it will still appear as a black screen
         loginViewController.view.backgroundColor = .white
         
