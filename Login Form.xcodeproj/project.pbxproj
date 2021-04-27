@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		24390B5F2629E898003EF3FF /* LoginControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24390B5E2629E898003EF3FF /* LoginControllerTests.swift */; };
 		24390B642629EC18003EF3FF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24390B632629EC18003EF3FF /* LoginController.swift */; };
+		D316854F263885B4008F2482 /* UsernameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D316854E263885B4008F2482 /* UsernameValidatorTests.swift */; };
 		D35731DB2628126600A5A8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35731DA2628126600A5A8DE /* AppDelegate.swift */; };
 		D35731DD2628126600A5A8DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35731DC2628126600A5A8DE /* SceneDelegate.swift */; };
 		D35731DF2628126600A5A8DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35731DE2628126600A5A8DE /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 		D35731E72628126700A5A8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35731E52628126700A5A8DE /* LaunchScreen.storyboard */; };
 		D35731F22628126700A5A8DE /* Login_FormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35731F12628126700A5A8DE /* Login_FormTests.swift */; };
 		D35731FD2628126700A5A8DE /* Login_FormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35731FC2628126700A5A8DE /* Login_FormUITests.swift */; };
+		D374B4072638862B00F43552 /* UsernameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D374B4062638862B00F43552 /* UsernameValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 /* Begin PBXFileReference section */
 		24390B5E2629E898003EF3FF /* LoginControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerTests.swift; sourceTree = "<group>"; };
 		24390B632629EC18003EF3FF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		D316854E263885B4008F2482 /* UsernameValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameValidatorTests.swift; sourceTree = "<group>"; };
 		D35731D72628126600A5A8DE /* Login Form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Login Form.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35731DA2628126600A5A8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D35731DC2628126600A5A8DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		D35731F82628126700A5A8DE /* Login FormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Login FormUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35731FC2628126700A5A8DE /* Login_FormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_FormUITests.swift; sourceTree = "<group>"; };
 		D35731FE2628126700A5A8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D374B4062638862B00F43552 /* UsernameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		24390B532629E3C4003EF3FF /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
+				D374B4062638862B00F43552 /* UsernameValidator.swift */,
 			);
 			path = DataAccess;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 		24390B572629E486003EF3FF /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
+				D316854E263885B4008F2482 /* UsernameValidatorTests.swift */,
 			);
 			path = DataAccess;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 				24390B642629EC18003EF3FF /* LoginController.swift in Sources */,
 				D35731DB2628126600A5A8DE /* AppDelegate.swift in Sources */,
 				D35731DD2628126600A5A8DE /* SceneDelegate.swift in Sources */,
+				D374B4072638862B00F43552 /* UsernameValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D316854F263885B4008F2482 /* UsernameValidatorTests.swift in Sources */,
 				D35731F22628126700A5A8DE /* Login_FormTests.swift in Sources */,
 				24390B5F2629E898003EF3FF /* LoginControllerTests.swift in Sources */,
 			);
