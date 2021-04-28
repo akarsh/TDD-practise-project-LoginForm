@@ -16,7 +16,6 @@
 		D35731E22628126600A5A8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35731E02628126600A5A8DE /* Main.storyboard */; };
 		D35731E42628126700A5A8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35731E32628126700A5A8DE /* Assets.xcassets */; };
 		D35731E72628126700A5A8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35731E52628126700A5A8DE /* LaunchScreen.storyboard */; };
-		D35731F22628126700A5A8DE /* Login_FormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35731F12628126700A5A8DE /* Login_FormTests.swift */; };
 		D35731FD2628126700A5A8DE /* Login_FormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35731FC2628126700A5A8DE /* Login_FormUITests.swift */; };
 		D374B4072638862B00F43552 /* UsernameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D374B4062638862B00F43552 /* UsernameValidator.swift */; };
 /* End PBXBuildFile section */
@@ -51,7 +50,6 @@
 		D35731E62628126700A5A8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D35731E82628126700A5A8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D35731ED2628126700A5A8DE /* Login FormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Login FormTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D35731F12628126700A5A8DE /* Login_FormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_FormTests.swift; sourceTree = "<group>"; };
 		D35731F32628126700A5A8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D35731F82628126700A5A8DE /* Login FormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Login FormUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35731FC2628126700A5A8DE /* Login_FormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_FormUITests.swift; sourceTree = "<group>"; };
@@ -189,7 +187,6 @@
 				24390B552629E468003EF3FF /* Presentation */,
 				24390B562629E475003EF3FF /* BusinessLogic */,
 				24390B572629E486003EF3FF /* DataAccess */,
-				D35731F12628126700A5A8DE /* Login_FormTests.swift */,
 				D35731F32628126700A5A8DE /* Info.plist */,
 			);
 			path = "Login FormTests";
@@ -347,7 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D316854F263885B4008F2482 /* UsernameValidatorTests.swift in Sources */,
-				D35731F22628126700A5A8DE /* Login_FormTests.swift in Sources */,
 				24390B5F2629E898003EF3FF /* LoginControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

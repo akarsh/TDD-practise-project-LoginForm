@@ -14,7 +14,11 @@ class UsernameValidator {
         "[", "]", "{", "}", "\\", "|"
     ]
 
-    func validate(_ username: String) -> Bool {
+    func isValid(_ username: String) -> Bool {
+        if username.count <= 0 || username.count <= 5 || username.count > 9 {
+            return false
+        }
+
         for specialCharacter in specialCharaters {
             if username.contains(specialCharacter) {
                 return false

@@ -13,14 +13,23 @@ class UsernameValidatorTests: XCTestCase {
     // MARK: TestData
 
     // Whitespaces
-    var usernameWithWhiteSpace = "a a"
-    var usernameWithWhiteSpaces = "hello yes i am"
-    var usernameWithOnlyWhitespace = " "
+    let USERNAME_WITH_WHITESPACE = "a a"
+    let USERNAME_WITH_WHITESPACES = "hello yes i am"
+    let USERNAME_WITH_ONLY_WHITESPACE = " "
 
     // Special Charaters
-    var usernameWithOnlySpecialCharacter = "!"
-    var usernameWithSpecialCharacter = "a@"
-    var usernameWithSpecialCharacters = "yesIam$tayingHer#"
+    let USERNAME_WITH_ONLY_SPECIAL_CHARACTER = "!"
+    let USERNAME_WITH_SPECIAL_CHARACTER = "a@"
+    let USERNAME_WITH_SPECIAL_CHARACTERS = "yesIam$tayingHer#"
+
+    // Length
+    let USERNAME_WITH_NO_CHARACTER = ""
+    let USERNAME_WITH_ONE_CHARACTER = "A"
+    let USERNAME_WITH_TWO_CHARACTERS = "AA"
+    let USERNAME_WITH_THREE_CHARACTERS = "AAA"
+    let USERNAME_WITH_FOUR_CHARACTERS = "AAAA"
+    let USERNAME_WITH_FIVE_CHARACTERS = "AAAAA"
+    let USERNAME_WITH_TEN_CHARACTERS = "AAAAAAAAAA"
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of
@@ -40,17 +49,24 @@ class UsernameValidatorTests: XCTestCase {
 }
 
 extension UsernameValidatorTests {
-    func testValidate_InputUsernameWithWhitespaces_ReturnsFalse() {
-        XCTAssertFalse(makeSUT().validate(usernameWithOnlyWhitespace))
-        XCTAssertFalse(makeSUT().validate(usernameWithWhiteSpace))
-        XCTAssertFalse(makeSUT().validate(usernameWithWhiteSpaces))
+    func testUsernameValidator_InputUsernameWithWhitespaces_ReturnsFalse() {
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_ONLY_WHITESPACE))
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_WHITESPACE))
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_WHITESPACES))
     }
 
-    func testUsername_InputUsernameWithSpecialCharacters_ReturnsFalse() {
-        XCTAssertFalse(makeSUT().validate(usernameWithOnlySpecialCharacter))
-        XCTAssertFalse(makeSUT().validate(usernameWithSpecialCharacter))
-        XCTAssertFalse(makeSUT().validate(usernameWithSpecialCharacters))
+    func testUsernameValidator_InputUsernameWithSpecialCharacters_ReturnsFalse() {
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_ONLY_SPECIAL_CHARACTER))
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_SPECIAL_CHARACTER))
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_SPECIAL_CHARACTERS))
     }
 
-    
+    func testUsernameValidator_InputUsernameWithLessLength_ReturnsFalse() {
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_NO_CHARACTER))
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_ONE_CHARACTER))
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_TWO_CHARACTERS))
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_THREE_CHARACTERS))
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_FIVE_CHARACTERS))
+        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_TEN_CHARACTERS))
+    }
 }
