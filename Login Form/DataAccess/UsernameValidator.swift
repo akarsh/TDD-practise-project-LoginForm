@@ -15,22 +15,20 @@ class UsernameValidator {
     ]
 
     func isValid(_ username: String) -> Bool {
-        if username.count <= 0 || username.count <= 5 || username.count > 9 {
-            return false
-        }
-
         for specialCharacter in specialCharaters {
             if username.contains(specialCharacter) {
                 return false
             }
         }
 
-        if username.contains(" ") {
+        if username.isEmpty || username.count <= 5 || username.count > 9 {
+            return false
+        } else if username.contains(" ") {
+            return false
+        } else if let _ = Int(username) {
             return false
         } else {
             return true
         }
-
-
     }
 }
