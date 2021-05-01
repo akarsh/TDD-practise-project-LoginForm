@@ -10,8 +10,17 @@ import Foundation
 class UsernameValidator {
     private let characterSet = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
 
+    var rules: [ValidationRule] = []
+    
     func validate(_ username: String) -> Bool {
-        if username.count <= 5 || username.count > 9 {
+
+        for rule in rules {
+            if !rule.validate(value: username) {
+                return false
+            }
+        }
+        
+        if username.count > 9 {
             return false
         }
 

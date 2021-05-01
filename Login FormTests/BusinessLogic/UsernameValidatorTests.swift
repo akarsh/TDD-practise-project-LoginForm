@@ -56,7 +56,11 @@ class UsernameValidatorTests: XCTestCase {
     // Mark: Helpers
 
     func makeSUT() -> UsernameValidator {
-        return UsernameValidator()
+        let validator = UsernameValidator()
+        let minLenghtRule = MinimumLenghtRule(message: "username too short")
+        minLenghtRule.MIN_LENGTH = 5
+        validator.rules.append(minLenghtRule)
+        return validator
     }
 }
 
