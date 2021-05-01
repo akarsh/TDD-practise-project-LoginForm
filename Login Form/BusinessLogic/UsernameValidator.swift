@@ -13,13 +13,13 @@ class UsernameValidator {
     var rules: [ValidationRule] = []
     
     func validate(_ username: String) -> Bool {
-        
+
         for rule in rules {
             if !rule.validate(value: username) {
                 return false
             }
         }
-        
+        x
         if username.count > 9 {
             return false
         }
