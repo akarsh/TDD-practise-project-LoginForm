@@ -11,7 +11,7 @@ class UsernameValidator {
     private let characterSet = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
 
     func validate(_ username: String) -> Bool {
-        if username.isEmpty || username.count <= 5 || username.count > 9 {
+        if username.count <= 5 || username.count > 9 {
             return false
         }
 
