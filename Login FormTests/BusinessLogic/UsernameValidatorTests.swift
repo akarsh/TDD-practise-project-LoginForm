@@ -62,37 +62,37 @@ class UsernameValidatorTests: XCTestCase {
 
 extension UsernameValidatorTests {
     func testUsernameValidator_InputUsernameWithWhitespaces_ReturnsFalse() {
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_ONLY_WHITESPACE))
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_WHITESPACE))
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_WHITESPACES))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_ONLY_WHITESPACE))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_WHITESPACE))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_WHITESPACES))
     }
 
     func testUsernameValidator_InputUsernameWithSpecialCharacters_ReturnsFalse() {
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_ONLY_SPECIAL_CHARACTER))
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_SPECIAL_CHARACTER))
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_SPECIAL_CHARACTERS))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_ONLY_SPECIAL_CHARACTER))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_SPECIAL_CHARACTER))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_SPECIAL_CHARACTERS))
     }
 
     func testUsernameValidator_InputUsernameWithLessLength_ReturnsFalse() {
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_NO_CHARACTER))
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_ONE_CHARACTER))
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_TWO_CHARACTERS))
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_THREE_CHARACTERS))
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_FIVE_CHARACTERS))
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_TEN_CHARACTERS))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_NO_CHARACTER))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_ONE_CHARACTER))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_TWO_CHARACTERS))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_THREE_CHARACTERS))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_FIVE_CHARACTERS))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_TEN_CHARACTERS))
     }
 
     func testUsernameValidator_InputUsernameWithNumbers_ReturnsFalse() {
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_ONLY_NUMBER))
-        XCTAssertFalse(makeSUT().isValid(USERNAME_WITH_ONLY_NUMBERS))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_ONLY_NUMBER))
+        XCTAssertFalse(makeSUT().validate(USERNAME_WITH_ONLY_NUMBERS))
     }
 
     func testUsernameValidator_InputUsernameWithAlpabetsAndNumbers_ReturnsTrue() {
-        XCTAssertTrue(makeSUT().isValid(USERNAME_WITH_LOWER_CASE_ALPHABETS))
-        XCTAssertTrue(makeSUT().isValid(USERNAME_WITH_LOWER_CASE_ALPHABETS_AND_NUMBERS))
-        XCTAssertTrue(makeSUT().isValid(USERNAME_WITH_UPPER_CASE_ALPHABETS))
-        XCTAssertTrue(makeSUT().isValid(USERNAME_WITH_UPPER_CASE_ALPHABETS_AND_NUMBERS))
-        XCTAssertTrue(makeSUT().isValid(USERNAME_WITH_LOWER_CASE_AND_UPPER_CASE_ALPHABETS))
-        XCTAssertTrue(makeSUT().isValid(USERNAME_WITH_LOWER_AND_UPPER_CASE_ALPHABETS_AND_NUMBERS))
+        XCTAssertTrue(makeSUT().validate(USERNAME_WITH_LOWER_CASE_ALPHABETS))
+        XCTAssertTrue(makeSUT().validate(USERNAME_WITH_LOWER_CASE_ALPHABETS_AND_NUMBERS))
+        XCTAssertTrue(makeSUT().validate(USERNAME_WITH_UPPER_CASE_ALPHABETS))
+        XCTAssertTrue(makeSUT().validate(USERNAME_WITH_UPPER_CASE_ALPHABETS_AND_NUMBERS))
+        XCTAssertTrue(makeSUT().validate(USERNAME_WITH_LOWER_CASE_AND_UPPER_CASE_ALPHABETS))
+        XCTAssertTrue(makeSUT().validate(USERNAME_WITH_LOWER_AND_UPPER_CASE_ALPHABETS_AND_NUMBERS))
     }
 }
