@@ -19,7 +19,7 @@ class UsernameValidator {
                 return false
             }
         }
-        x
+        
         if username.count > 9 {
             return false
         }
