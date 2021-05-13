@@ -1,7 +1,7 @@
 # TDD-practise-project-LoginForm
 
 [![Swift](https://github.com/akarsh/TDD-practise-project-LoginForm/actions/workflows/swift.yml/badge.svg)](https://github.com/akarsh/TDD-practise-project-LoginForm/actions/workflows/swift.yml)
-
+[![CodeFactor](https://www.codefactor.io/repository/github/akarsh/tdd-practise-project-loginform/badge/main)](https://www.codefactor.io/repository/github/akarsh/tdd-practise-project-loginform/overview/main)
 
 ## Requirements
 
