@@ -20,5 +20,5 @@ jobs:
       - name: Build and test
         run: |
           xcodebuild clean test -project "Login Form.xcodeproj" -scheme "Login Form" -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-        env: 
+        env:
          destination: ${{ matrix.destination }}
