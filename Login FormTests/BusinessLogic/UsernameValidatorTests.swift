@@ -62,7 +62,7 @@ class UsernameValidatorTests: XCTestCase {
         minLenghtRule.MIN_LENGTH = 5
         validator.rules.append(minLenghtRule)
 
-        let maxLengthRule = MaximumLengthRule(message: "username too big")
+        let maxLengthRule = MaximumLengthRule(message: "username too long")
         maxLengthRule.MAX_LENGTH = 9
         validator.rules.append(maxLengthRule)
 
