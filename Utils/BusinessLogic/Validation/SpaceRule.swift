@@ -15,7 +15,7 @@ class SpaceRule: ValidationRule {
     }
 
     func validate(value: String) -> Bool {
-        return value.contains(space)
+        return !value.contains(space)
     }
 
     func errorMessage() -> String {
