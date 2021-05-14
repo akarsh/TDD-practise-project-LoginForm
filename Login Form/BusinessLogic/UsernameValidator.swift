@@ -20,10 +20,6 @@ class UsernameValidator {
             }
         }
 
-        if username.contains(" ") {
-            return false
-        }
-
         if let _ = Int(username) {
             return false
         }
