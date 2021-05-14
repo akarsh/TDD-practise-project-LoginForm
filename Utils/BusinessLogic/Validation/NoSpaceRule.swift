@@ -5,9 +5,9 @@
 //  Created by Akarsh Seggemu on 14.05.21.
 //
 
-class SpaceRule: ValidationRule {
+class NoSpaceRule: ValidationRule {
 
-    var space = String()
+    private let space = ""
     private var message: String
 
     init(message: String) {
