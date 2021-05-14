@@ -19,10 +19,6 @@ class UsernameValidator {
                 return false
             }
         }
-        
-        if username.count > 9 {
-            return false
-        }
 
         if username.contains(" ") {
             return false
