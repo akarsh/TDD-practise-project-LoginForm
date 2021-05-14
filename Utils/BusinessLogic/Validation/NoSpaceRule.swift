@@ -7,7 +7,7 @@
 
 class NoSpaceRule: ValidationRule {
 
-    private let space = ""
+    private let space = " "
     private var message: String
 
     init(message: String) {
