@@ -66,6 +66,10 @@ class UsernameValidatorTests: XCTestCase {
         maxLengthRule.MAX_LENGTH = 9
         validator.rules.append(maxLengthRule)
 
+        let spaceRule = SpaceRule(message: "username has space")
+        spaceRule.space = " "
+        validator.rules.append(spaceRule)
+
         return validator
     }
 }
