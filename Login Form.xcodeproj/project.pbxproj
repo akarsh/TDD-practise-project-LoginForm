@@ -22,6 +22,7 @@
 		D374B4072638862B00F43552 /* UsernameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D374B4062638862B00F43552 /* UsernameValidator.swift */; };
 		D383CDD3264D936D0094E07D /* MaximumLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383CDD2264D936D0094E07D /* MaximumLengthRule.swift */; };
 		D3CAD842264E89A100AFB512 /* NoSpaceRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD841264E89A100AFB512 /* NoSpaceRule.swift */; };
+		D3E0A94D264FA39F0045E451 /* NoNumberRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0A94C264FA39F0045E451 /* NoNumberRule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D374B4062638862B00F43552 /* UsernameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameValidator.swift; sourceTree = "<group>"; };
 		D383CDD2264D936D0094E07D /* MaximumLengthRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumLengthRule.swift; sourceTree = "<group>"; };
 		D3CAD841264E89A100AFB512 /* NoSpaceRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSpaceRule.swift; sourceTree = "<group>"; };
+		D3E0A94C264FA39F0045E451 /* NoNumberRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNumberRule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				24330DCE263D626100724978 /* MinimumLenghtRule.swift */,
 				D383CDD2264D936D0094E07D /* MaximumLengthRule.swift */,
 				D3CAD841264E89A100AFB512 /* NoSpaceRule.swift */,
+				D3E0A94C264FA39F0045E451 /* NoNumberRule.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				D35731DF2628126600A5A8DE /* ViewController.swift in Sources */,
 				24390B642629EC18003EF3FF /* LoginController.swift in Sources */,
 				D35731DB2628126600A5A8DE /* AppDelegate.swift in Sources */,
+				D3E0A94D264FA39F0045E451 /* NoNumberRule.swift in Sources */,
 				D35731DD2628126600A5A8DE /* SceneDelegate.swift in Sources */,
 				D374B4072638862B00F43552 /* UsernameValidator.swift in Sources */,
 			);

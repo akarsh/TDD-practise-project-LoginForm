@@ -69,6 +69,9 @@ class UsernameValidatorTests: XCTestCase {
         let spaceRule = NoSpaceRule(message: "username must not contain spaces")
         validator.rules.append(spaceRule)
 
+        let noNumberRule = NoNumberRule(message: "username must not be a number")
+        validator.rules.append(noNumberRule)
+
         return validator
     }
 }

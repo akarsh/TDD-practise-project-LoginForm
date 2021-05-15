@@ -20,10 +20,6 @@ class UsernameValidator {
             }
         }
 
-        if let _ = Int(username) {
-            return false
-        }
-
         if username.rangeOfCharacter(from: characterSet.inverted) != nil {
             return false
         } else {
